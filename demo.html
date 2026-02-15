@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark">
+  <title>Focus Market — Демо пресета</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<a class="skip" href="#main">Перейти до контенту</a>
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Focus Market — на головну">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Focus Market</div>
+      </a>
+      <nav class="navlinks" aria-label="Навігація">
+        <a class="chip" href="index.html" >Головна</a>
+        <a class="chip" href="research.html" >UX-дослідження</a>
+        <a class="chip" href="flow.html" >User Flow & Wireframes</a>
+        <a class="chip" href="demo.html" aria-current="page">Демо пресета</a>
+        <a class="chip" href="checkout.html" >Оплата</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main id="main" class="container">
+
+<section class="card">
+  <h1 class="h1" style="font-size:32px">Демо: порівняння “До/Після” + перемикання пресетів</h1>
+  <p class="p">
+    Нижче — ключовий UI-компонент: <strong>Image Comparison Slider</strong> та базова імітація пресетів у реальному часі.
+    Нижче — ключовий UI-компонент: <strong>Image Comparison Slider</strong> та базова імітація пресетів у реальному часі.</p>
+</section>
+
+<section class="section" data-preset-demo>
+
+  <div class="card soft" style="margin-bottom:14px">
+    <h2 class="h2" style="font-size:18px; margin-bottom:6px">Завантаж свої фото</h2>
+    <p class="p" style="margin-bottom:10px">
+      На GitHub Pages немає сервера, тому фото не “зберігаються” на сайті — вони обробляються <strong>локально у твоєму браузері</strong>.
+      Вибери файл, і він одразу зʼявиться у блоці “До/Після”.
+    </p>
+
+    <div class="grid" style="grid-template-columns: 1fr 1fr; gap:12px">
+      <div class="card" style="box-shadow:none; padding:14px">
+        <div class="field">
+          <label for="fileInputBefore">Фото ДО (обовʼязково)</label>
+          <input class="input" id="fileInputBefore" type="file" accept="image/*" />
+          <div class="help">Підтримуються JPG/PNG/WebP.</div>
+        </div>
+      </div>
+
+      <div class="card" style="box-shadow:none; padding:14px">
+        <div class="field">
+          <label for="fileInputAfter">Фото ПІСЛЯ (необовʼязково)</label>
+          <input class="input" id="fileInputAfter" type="file" accept="image/*" />
+          <div class="help">Якщо не вибирати — “ПІСЛЯ” буде те саме фото + пресет.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btnrow" style="margin-top:12px">
+      <button class="btn subtle" type="button" id="resetPhotosBtn">Повернути плейсхолдери</button>
+      <span class="small" id="uploadStatus" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <div class="compare" data-compare>
+    <div class="stage">
+      <div class="layer before">
+        <div class="img-backdrop" data-backdrop="before" aria-hidden="true"></div>
+        <img id="beforeImg" src="assets/img/before.svg" alt="Фото ДО" />
+      </div>
+      <div class="layer after">
+        <div class="img-backdrop" data-backdrop="after" aria-hidden="true"></div>
+        <img id="afterImg" data-after-img src="assets/img/after.svg" alt="Фото ПІСЛЯ" />
+      </div>
+      <div class="grabber" aria-hidden="true"></div>
+      <div class="handle" aria-hidden="true"></div>
+      <div class="labels" aria-hidden="true">
+        <span class="label">До</span>
+        <span class="label">Після</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="card">
+      <h2 class="h2" style="font-size:18px; margin-bottom:6px">Пресети</h2>
+      <div class="pillrow" role="group" aria-label="Перемикання пресетів">
+        <button class="pill" type="button" data-preset="cinematic" aria-pressed="false">Cinematic</button>
+        <button class="pill" type="button" data-preset="clean" aria-pressed="true">Clean Pro</button>
+        <button class="pill" type="button" data-preset="warm" aria-pressed="false">Warm Glow</button>
+        <button class="pill" type="button" data-preset="bw" aria-pressed="false">B&W Classic</button>
+      </div>
+
+      <div class="hr"></div>
+
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+        <div>
+          <div class="small">Обраний пресет</div>
+          <div style="font-weight:800; font-size:18px" data-preset-name>Clean Pro</div>
+        </div>
+        <div style="text-align:right">
+          <div class="small">Ціна</div>
+          <div style="font-weight:850; font-size:18px" data-preset-price>129 ₴</div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="small" style="margin-bottom:8px">Параметри (імітація)</div>
+      <div class="pillrow" data-preset-stats></div>
+
+      <div class="btnrow" style="margin-top:14px">
+        <a class="btn positive" data-buy href="checkout.html?preset=clean">Купити (демо)</a>
+        <a class="btn subtle" href="index.html">Назад до каталогу</a>
+      </div>
+    </div>
+
+    <div class="card soft">
+      <h2 class="h2" style="font-size:18px">UX-обґрунтування</h2>
+      <ul class="list">
+        <li>Slider дозволяє чесно оцінити пресет без “підміни” прикладів.</li>
+        <li>Перемикач пресетів дає швидке порівняння стилів на одному кадрі.</li>
+        <li>CTA “Купити” поряд з демо → короткий шлях до покупки.</li>
+        <li>Клавіатура: ←/→ рухає повзунок, Home/End — крайні значення.</li>
+      </ul>
+      <div class="hr"></div>
+      <div class="small">
+        Технічна частина: <code>js/slider.js</code> (slider) + <code>js/app.js</code> (пресети).
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/slider.js"></script>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div><strong>Focus Market</strong> — навчальний прототип маркетплейса пресетів (UX/UI програмування).</div>
+    <div class="small" style="margin-top:6px">Працює як статичний сайт: HTML/CSS/JS. Фото завантажуються локально у браузері.</div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

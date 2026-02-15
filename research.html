@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark">
+  <title>Focus Market — UX-дослідження</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<a class="skip" href="#main">Перейти до контенту</a>
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Focus Market — на головну">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Focus Market</div>
+      </a>
+      <nav class="navlinks" aria-label="Навігація">
+        <a class="chip" href="index.html" >Головна</a>
+        <a class="chip" href="research.html" aria-current="page">UX-дослідження</a>
+        <a class="chip" href="flow.html" >User Flow & Wireframes</a>
+        <a class="chip" href="demo.html" >Демо пресета</a>
+        <a class="chip" href="checkout.html" >Оплата</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main id="main" class="container">
+
+<section class="card">
+  <h1 class="h1" style="font-size:32px">UX-дослідження та візуальний стиль</h1>
+  <p class="p">
+    Мета: визначити потреби мобільних фотографів/ретушерів і спроєктувати інтерфейс маркетплейса пресетів,
+    який швидко веде користувача від вибору до покупки.
+  </p>
+</section>
+
+<section class="section">
+  <div class="title">
+    <h2 class="h2">Аудиторія (2 сегменти)</h2>
+    <p>Хто купує пресети та навіщо</p>
+  </div>
+
+  <div class="grid" style="margin-top:12px">
+    <article class="card">
+      <h3 class="h2" style="font-size:18px">Персона 1: Mobile Creator</h3>
+      <p class="p">Знімає на телефон, хоче стабільний “фірмовий” стиль для соцмереж.</p>
+      <ul class="list">
+        <li>Потрібно: швидко отримати красивий результат</li>
+        <li>Біль: “на око” налаштовувати довго</li>
+        <li>Критично: бачити <strong>До/Після</strong> до покупки</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3 class="h2" style="font-size:18px">Персона 2: Retoucher</h3>
+      <p class="p">Працює з серіями фото, важлива повторюваність і контроль параметрів.</p>
+      <ul class="list">
+        <li>Потрібно: консистентність + мінімум артефактів</li>
+        <li>Біль: складно оцінити якість без прикладів</li>
+        <li>Критично: зрозумілий опис, сумісність, ліцензія</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="title">
+    <h2 class="h2">Основні потреби та “болі”</h2>
+    <p>Що вирішує Focus Market</p>
+  </div>
+
+  <div class="card soft" style="margin-top:12px">
+    <table class="table" aria-label="Потреби та рішення">
+      <thead>
+        <tr><th>Потреба</th><th>Проблема</th><th>Рішення в інтерфейсі</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Швидко оцінити результат</td>
+          <td>Не видно різниці до покупки</td>
+          <td>Slider “До/Після”, демо-екран пресета</td>
+        </tr>
+        <tr>
+          <td>Довіра до якості</td>
+          <td>Невідомо як виглядає на різних фото</td>
+          <td>Приклади + параметри пресета + теги</td>
+        </tr>
+        <tr>
+          <td>Швидка покупка</td>
+          <td>Зайві поля/кроки → кидання корзини</td>
+          <td>Checkout мінімум полів, підказки, валідація</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section">
+  <div class="title">
+    <h2 class="h2">Візуальна система (Dark Mode)</h2>
+    <p>Чому саме такий стиль</p>
+  </div>
+
+  <div class="grid" style="margin-top:12px">
+    <article class="card">
+      <h3 class="h2" style="font-size:18px">Принципи</h3>
+      <ul class="list">
+        <li>Темний фон → фокус на зображеннях</li>
+        <li>Акцентний колір (фіолетовий) → CTA</li>
+        <li>Мʼякі тіні/радіуси → “преміум” відчуття</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3 class="h2" style="font-size:18px">Типографіка</h3>
+      <ul class="list">
+        <li>H1: 32–38px, щільний інтерліньяж</li>
+        <li>Body: 14–16px, читабельний контраст</li>
+        <li>Мікротекст: 12–13px для підказок</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3 class="h2" style="font-size:18px">Палітра</h3>
+      <ul class="list">
+        <li>Background: <code>#0b0f14</code></li>
+        <li>Panel: <code>#101826</code></li>
+        <li>Text: <code>#e6edf6</code></li>
+        <li>Brand: <code>#7c5cff</code></li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="card soft" style="margin-top:14px">
+    <h3 class="h2" style="font-size:18px">Що додати у звіт / на сайт</h3>
+    <ul class="list">
+      <li>2–3 скріншоти moodboard (можна з Behance/Dribbble як референс)</li>
+      <li>Короткий висновок: які елементи стилю підтримують задачу “показати якість обробки”</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div><strong>Focus Market</strong> — навчальний прототип маркетплейса пресетів (UX/UI програмування).</div>
+    <div class="small" style="margin-top:6px">Працює як статичний сайт: HTML/CSS/JS. Фото завантажуються локально у браузері.</div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

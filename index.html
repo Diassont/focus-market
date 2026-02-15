@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark">
+  <title>Focus Market — маркетплейс пресетів</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<a class="skip" href="#main">Перейти до контенту</a>
+
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Focus Market — на головну">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Focus Market</div>
+      </a>
+      <nav class="navlinks" aria-label="Навігація">
+        <a class="chip" href="index.html" aria-current="page">Головна</a>
+        <a class="chip" href="research.html">UX-дослідження</a>
+        <a class="chip" href="flow.html">User Flow & Wireframes</a>
+        <a class="chip" href="demo.html">Демо пресета</a>
+        <a class="chip" href="checkout.html">Оплата</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="container">
+
+  <section class="hero">
+    <div class="card">
+      <h1 class="h1">Маркетплейс авторських пресетів для мобільної фотообробки</h1>
+      <p class="p">
+        <strong>Focus Market</strong> — сервіс, де фотографи та ретушери швидко знаходять якісні пресети,
+        бачать результат <em>До/Після</em> і купують у 2–3 кліки. Це навчальний прототип під GitHub Pages.
+      </p>
+
+      <div class="kpis" aria-label="Ключові принципи">
+        <div class="kpi"><strong>UCD</strong><span>орієнтація на потреби користувача</span></div>
+        <div class="kpi"><strong>Dark Mode</strong><span>акцент на фото та контраст</span></div>
+        <div class="kpi"><strong>Прозорість</strong><span>порівняння До/Після через slider</span></div>
+      </div>
+
+      <div class="btnrow">
+        <a class="btn primary" href="demo.html">Спробувати демо</a>
+        <a class="btn subtle" href="research.html">Подивитись UX-дослідження</a>
+        <a class="btn positive" href="checkout.html?preset=clean">Перейти до оплати (демо)</a>
+        <a class="btn" href="#catalog">Каталог ↓</a>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="small">
+        <strong>Формат здачі:</strong> статичний сайт (HTML/CSS/JS) → GitHub Pages.
+        Працює без бекенду, але демонструє UX-логіку та ключові UI-компоненти.
+      </div>
+    </div>
+
+    <div class="card soft">
+      <h2 class="h2">Що реалізовано</h2>
+      <ul class="list">
+        <li>Каталог пресетів з картками, тегами і цінами</li>
+        <li>Сторінка пресета з порівнянням <strong>До/Після</strong> (Image Comparison Slider)</li>
+        <li>Перемикання пресетів у реальному часі (імітація через <code>CSS filter</code>)</li>
+        <li>Checkout-форма з базовою валідацією та “завантаженням” файлу</li>
+        <li>Окремі сторінки: UX-дослідження, User Flow & Wireframes</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="catalog" class="section">
+    <div class="title">
+      <h2 class="h2">Каталог пресетів</h2>
+      <p>4 приклади. Для здачі можна додати більше карток.</p>
+    </div>
+
+    <div class="grid" style="margin-top:12px">
+
+      <!-- Cinematic -->
+      <article class="card preset">
+        <div class="preview" aria-label="Превʼю пресета Cinematic">
+          <span class="badge">Cinematic • Portrait</span>
+          <img
+            src="assets/img/catalog/cinematic.png"
+            alt="Превʼю пресета Cinematic"
+            style="width:100%; height:100%; object-fit:cover;"
+          />
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+            <strong>Cinematic</strong>
+            <span class="price">149 ₴</span>
+          </div>
+          <div class="meta">
+            <span>Lightroom Mobile</span><span>•</span><span>1 preset</span><span>•</span><span>v1.0</span>
+          </div>
+        </div>
+        <div class="btnrow">
+          <a class="btn primary" href="demo.html">Демо</a>
+          <a class="btn positive" href="checkout.html?preset=cinematic">Купити</a>
+        </div>
+      </article>
+
+      <!-- Clean Pro -->
+      <article class="card preset">
+        <div class="preview" aria-label="Превʼю пресета Clean Pro">
+          <span class="badge">Clean • Lifestyle</span>
+          <img
+            src="assets/img/catalog/clean.png"
+            alt="Превʼю пресета Clean Pro"
+            style="width:100%; height:100%; object-fit:cover;"
+          />
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+            <strong>Clean Pro</strong>
+            <span class="price">129 ₴</span>
+          </div>
+          <div class="meta">
+            <span>LR Mobile</span><span>•</span><span>1 preset</span><span>•</span><span>v1.0</span>
+          </div>
+        </div>
+        <div class="btnrow">
+          <a class="btn primary" href="demo.html">Демо</a>
+          <a class="btn positive" href="checkout.html?preset=clean">Купити</a>
+        </div>
+      </article>
+
+      <!-- Warm Glow -->
+      <article class="card preset">
+        <div class="preview" aria-label="Превʼю пресета Warm Glow">
+          <span class="badge">Warm • Travel</span>
+          <img
+            src="assets/img/catalog/warm.png"
+            alt="Превʼю пресета Warm Glow"
+            style="width:100%; height:100%; object-fit:cover;"
+          />
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+            <strong>Warm Glow</strong>
+            <span class="price">139 ₴</span>
+          </div>
+          <div class="meta">
+            <span>LR Mobile</span><span>•</span><span>1 preset</span><span>•</span><span>v1.0</span>
+          </div>
+        </div>
+        <div class="btnrow">
+          <a class="btn primary" href="demo.html">Демо</a>
+          <a class="btn positive" href="checkout.html?preset=warm">Купити</a>
+        </div>
+      </article>
+
+      <!-- B&W Classic -->
+      <article class="card preset">
+        <div class="preview" aria-label="Превʼю пресета B&amp;W Classic">
+          <span class="badge">B&amp;W • Street</span>
+          <img
+            src="assets/img/catalog/bw.png"
+            alt="Превʼю пресета B&amp;W Classic"
+            style="width:100%; height:100%; object-fit:cover;"
+          />
+        </div>
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+            <strong>B&amp;W Classic</strong>
+            <span class="price">119 ₴</span>
+          </div>
+          <div class="meta">
+            <span>LR Mobile</span><span>•</span><span>1 preset</span><span>•</span><span>v1.0</span>
+          </div>
+        </div>
+        <div class="btnrow">
+          <a class="btn primary" href="demo.html">Демо</a>
+          <a class="btn positive" href="checkout.html?preset=bw">Купити</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="card soft" style="margin-top:14px">
+      <h3 class="h2" style="font-size:18px">Обґрунтування (UCD)</h3>
+      <ul class="list">
+        <li><strong>Каталог</strong> — картки з ціною/тегами знижують час вибору пресета.</li>
+        <li><strong>Dark Mode</strong> — менше “засвічує” фото, краще сприймаються відтінки.</li>
+        <li><strong>Прозорість результату</strong> — демо “До/Після” зменшує ризик “купив — не те”.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div><strong>Focus Market</strong> — навчальний прототип маркетплейса пресетів (UX/UI програмування).</div>
+    <div class="small" style="margin-top:6px">
+      Працює як статичний сайт: HTML/CSS/JS. Фото завантажуються локально у браузері.
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

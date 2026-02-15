@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark">
+  <title>Focus Market — Оплата (демо)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<a class="skip" href="#main">Перейти до контенту</a>
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Focus Market — на головну">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Focus Market</div>
+      </a>
+      <nav class="navlinks" aria-label="Навігація">
+        <a class="chip" href="index.html" >Головна</a>
+        <a class="chip" href="research.html" >UX-дослідження</a>
+        <a class="chip" href="flow.html" >User Flow & Wireframes</a>
+        <a class="chip" href="demo.html" >Демо пресета</a>
+        <a class="chip" href="checkout.html" aria-current="page">Оплата</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main id="main" class="container">
+
+<section class="card" data-checkout>
+  <h1 class="h1" style="font-size:32px">Оплата та завантаження (демо)</h1>
+  <p class="p">
+    Це прототип UX оплати без реальних платежів. Мета — показати зручність форми,
+    валідацію та сценарій “після покупки”.
+  </p>
+
+  <div class="hr"></div>
+
+  <div class="grid" style="grid-template-columns: 1fr 1fr; margin-top:0">
+    <div class="card soft">
+      <h2 class="h2" style="font-size:18px">Ваше замовлення</h2>
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:10px">
+        <div>
+          <div class="small">Пресет</div>
+          <div style="font-weight:850; font-size:18px" data-summary-name>—</div>
+        </div>
+        <div style="text-align:right">
+          <div class="small">Сума</div>
+          <div style="font-weight:850; font-size:18px" data-summary-price>—</div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+      <ul class="list">
+        <li>Миттєве завантаження після “оплати”</li>
+        <li>Email для доступу/чеку (демо)</li>
+        <li>Ліцензія: персональне використання (навчальний приклад)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 class="h2" style="font-size:18px">Дані для оплати (демо)</h2>
+
+      <form class="form" novalidate>
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" id="email" name="email" placeholder="name@example.com" autocomplete="email" required />
+          <div class="help">Ми надішлемо інструкцію та посилання на завантаження (демо).</div>
+        </div>
+
+        <div class="field">
+          <label for="name">Імʼя</label>
+          <input class="input" id="name" name="name" placeholder="Ярослав" autocomplete="name" required />
+        </div>
+
+        <div class="field">
+          <label for="card">Номер картки</label>
+          <input class="input" id="card" name="card" placeholder="1111 2222 3333 4444" inputmode="numeric" required />
+          <div class="help">Демо-правило: 16 цифр. Реальних платежів немає.</div>
+        </div>
+
+        <div class="btnrow">
+          <button class="btn primary" data-pay type="submit">Оплатити (демо)</button>
+          <a class="btn subtle" href="demo.html">Повернутись</a>
+        </div>
+
+        <div class="small">Порада: для звіту додай скрін з валідацією помилок.</div>
+      </form>
+
+      <div style="margin-top:12px" data-result></div>
+    </div>
+  </div>
+
+  <div class="card soft" style="margin-top:14px">
+    <h3 class="h2" style="font-size:18px">Перевірка зручності (коротко)</h3>
+    <ul class="list">
+      <li>Мінімум полів, зрозумілі підказки → менше помилок.</li>
+      <li>Валідація в реальному часі → користувач бачить, що виправити.</li>
+      <li>Після “оплати” одразу доступна кнопка завантаження → менше фрустрації.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div><strong>Focus Market</strong> — навчальний прототип маркетплейса пресетів (UX/UI програмування).</div>
+    <div class="small" style="margin-top:6px">Працює як статичний сайт: HTML/CSS/JS. Фото завантажуються локально у браузері.</div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

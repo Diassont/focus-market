@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark">
+  <title>Focus Market — User Flow & Wireframes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<a class="skip" href="#main">Перейти до контенту</a>
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html" aria-label="Focus Market — на головну">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Focus Market</div>
+      </a>
+      <nav class="navlinks" aria-label="Навігація">
+        <a class="chip" href="index.html" >Головна</a>
+        <a class="chip" href="research.html" >UX-дослідження</a>
+        <a class="chip" href="flow.html" aria-current="page">User Flow & Wireframes</a>
+        <a class="chip" href="demo.html" >Демо пресета</a>
+        <a class="chip" href="checkout.html" >Оплата</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main id="main" class="container">
+
+<section class="card">
+  <h1 class="h1" style="font-size:32px">Проєктування взаємодії</h1>
+  <p class="p">
+    Тут описаний шлях користувача від вибору пресета до покупки та підключені wireframes зі Figma.
+  </p>
+</section>
+
+<section class="section">
+  <div class="title">
+    <h2 class="h2">User Flow</h2>
+    <p>Відкрий як схему або встав картинку зі Figma</p>
+  </div>
+
+  <div class="card soft" style="margin-top:12px">
+    <ol class="list" style="color:var(--text)">
+      <li><strong>Каталог</strong> → вибір пресета за тегами/ціною</li>
+      <li><strong>Сторінка пресета</strong> → перегляд “До/Після” + опис/сумісність</li>
+      <li><strong>Checkout</strong> → введення email + оплата (демо) → підтвердження</li>
+      <li><strong>Завантаження</strong> → отримання файлу пресета (.zip) та інструкції</li>
+    </ol>
+    <div class="hr"></div>
+    <div class="small">
+      Порада: у звіті додай “точки ризику” (де користувач може піти) і як дизайн це зменшує:
+      наприклад, невпевненість у результаті → slider “До/Після”.
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="title">
+    <h2 class="h2">Wireframes (Figma)</h2>
+    <p>Wireframes (за бажанням)</p>
+  </div>
+
+  <div class="grid" style="margin-top:12px">
+    <article class="card">
+      <h3 class="h2" style="font-size:18px">Екран 1: Preset page</h3>
+      <p class="p">Скелет: фото/slider, кнопки пресетів, CTA “Купити”.</p>
+      <div class="preview" style="min-height:220px">
+      <span class="badge">Wireframe</span>
+        <img
+          src="assets/figma/preset-wireframe.png"
+          alt="Wireframe: Preset page"
+          style="width:100%; height:100%; object-fit:contain; display:block;"/>
+    </div>
+    </article>
+
+    <article class="card">
+      <h3 class="h2" style="font-size:18px">Екран 2: Checkout</h3>
+      <p class="p">Скелет: мінімум полів, підказки, підтвердження.</p>
+      <div class="preview" style="min-height:220px">
+      <span class="badge">Wireframe</span>
+        <img
+          src="assets/figma/checkout-wireframe.png"
+          alt="Wireframe: Checkout"
+          style="width:100%; height:100%; object-fit:contain; display:block;"/>
+      </div>
+    </article>
+  </div>
+
+  <div class="card soft" style="margin-top:14px">
+    <h3 class="h2" style="font-size:18px">Обґрунтування</h3>
+    <ul class="list">
+      <li>Скелетні схеми пришвидшують перевірку логіки без “красивостей”.</li>
+      <li>Slider у фокусі — ключовий доказ якості (до/після).</li>
+      <li>Checkout мінімалістичний → зменшення когнітивного навантаження.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div><strong>Focus Market</strong> — навчальний прототип маркетплейса пресетів (UX/UI програмування).</div>
+    <div class="small" style="margin-top:6px">Працює як статичний сайт: HTML/CSS/JS. Фото завантажуються локально у браузері.</div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
